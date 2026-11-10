@@ -1,0 +1,182 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111827;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 0 24px 24px 24px;
+  background: #111;
+}
+
+button {
+  font: inherit;
+}
+
+.table {
+  width: min(100%, 440px);
+  border: 2px solid #e5e7eb;
+  /* border-radius: 20px; */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 24px;
+  background: #f8f8f8;
+}
+
+.header,
+.hand-heading,
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header {
+  /* border-bottom: 1px solid #f3f4f6; */
+  padding-bottom: 24px;
+}
+
+.rules {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.game {
+  padding-top: 20px;
+}
+
+.message {
+  min-height: 24px;
+  margin-bottom: 0px;
+  color: #374151;
+  font-weight: bold;
+}
+
+.hand {
+  margin-bottom: 28px;
+}
+
+.hand-heading {
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+
+.score {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-height: 96px;
+}
+
+.card {
+  width: 66px;
+  height: 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 9px;
+  background: #fff;
+  font-weight: 650;
+}
+
+.card-red {
+  color: #b91c1c;
+}
+
+.card-corner {
+  font-size: 0.85rem;
+}
+
+.card-suit {
+  align-self: flex-end;
+  font-size: 1.25rem;
+}
+
+.card-hidden {
+  border-color: #111827;
+  background: #111827;
+  color: #fff;
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions {
+  justify-content: flex-start;
+  margin-top: 32px;
+}
+
+.button {
+  min-height: 42px;
+  border: 1px solid #111827;
+  border-radius: 8px;
+  padding: 0 18px;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button-outline {
+  background: #fff;
+  color: #111827;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+.rules {
+  margin: 0px 0px 24px 24px;
+}
+
+@media (max-width: 420px) {
+  body {
+    padding: 12px;
+  }
+
+  .header {
+    align-items: flex-start;
+  }
+
+  .button {
+    padding: 0 13px;
+  }
+}

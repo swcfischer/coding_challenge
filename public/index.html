@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111827">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="table">
+      <header class="header">
+        <!-- <div>
+          <h1>Blackjack</h1>
+        </div> -->
+        <button id="new-game" class="button button-outline" type="button">New game</button>
+      </header>
+
+      <section id="game" class="game" aria-live="polite">
+        <p id="message" class="message">Start a game to deal your cards.</p>
+        <p class="rules">Dealer stands on 17. Aces count as 1 or 11.</p>
+        <section class="hand player-hand" aria-labelledby="player-title">
+          <div class="hand-heading">
+            <h2 id="player-title">You</h2>
+            <span id="player-score" class="score"></span>
+          </div>
+          <div id="player-cards" class="cards"></div>
+        </section>
+        <section class="hand" aria-labelledby="dealer-title">
+          <div class="hand-heading">
+            <h2 id="dealer-title">Dealer</h2>
+            <span id="dealer-score" class="score"></span>
+          </div>
+          <div id="dealer-cards" class="cards"></div>
+        </section>
+        <div class="actions">
+          <button id="hit" class="button" type="button" disabled>Hit</button>
+          <button id="stand" class="button button-outline" type="button" disabled>Stand</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
